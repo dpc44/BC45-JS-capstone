@@ -142,3 +142,34 @@
   color: red;
   transition: 0.3s;
 }
+
+/**Carousel**/
+.carousel {
+  background-color: #f7f7f7;
+  background-image: url(/img/bg15.png);
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+.carousel .container-carousel .carousel-inner .carousel-item .container-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 600px;
+}
+.carousel .container-carousel .carousel-inner .carousel-item .container-item .carousel-img {
+  width: 60%;
+}
+.carousel .container-carousel .carousel-inner .carousel-item .container-item .carousel-img img {
+  height: 50%;
+}
+.carousel .container-carousel .carousel-inner .carousel-item .container-item .carousel-detail {
+  width: 40%;
+}
+.carousel .container-carousel .carousel-control-prev-icon {
+  filter: invert(100%);
+}
+.carousel .container-carousel .carousel-control-next-icon {
+  filter: invert(100%);
+}
