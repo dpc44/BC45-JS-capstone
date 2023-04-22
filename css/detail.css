@@ -78,6 +78,8 @@
 /**footer**/
 .footer {
   border-top: 1px solid #e0e0e0;
+  position: sticky;
+  top: 100%;
 }
 .footer .container-footer {
   width: 100%;
@@ -146,6 +148,10 @@
   transition: 0.3s;
 }
 
+.detail {
+  border-bottom: 1px solid #e0e0e0;
+  margin-top: 5px;
+}
 .detail .container-detail {
   display: flex;
   margin: 55px 55px;
