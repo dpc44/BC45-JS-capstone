@@ -21,7 +21,7 @@
                       <div class="card-footer">
                         <div class="row">
                             <div class="col-6 button-outlook ">
-                                <a href="#">Buy now</a>
+                                <a href="./detail.html?productid=${sanPham.id}">Buy now</a>
                             </div>
                             <div class="col-6 ">
                                 <p class="price" >${sanPham.price}</p>
