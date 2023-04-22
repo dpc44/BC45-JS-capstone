@@ -1,0 +1,53 @@
+.product{
+    margin: 55px 0;
+    .container{
+        .card{
+            margin: 10px 10px;
+            .card-img-top{
+                img{
+                    width: 100%;
+                }
+            }
+            .card-body{
+                text-align: center;
+                border-top: 1px solid #e0e0e0;
+                height: 150px;
+                .product-name{
+                    font-size: 25px;
+                    font-weight: 500;
+
+                }
+                .short-description{
+                    font-size: 15px;
+                    font-weight: 300;
+                }
+            }
+            .card-footer{
+                .button-outlook{
+                    background-color: #ffc107;
+                    cursor: pointer;
+                   a{
+                        text-align: center;
+                        display: block;
+                        margin: 10px 0;
+                        text-decoration: none;
+                        color: #fff;
+                        font-weight: 500;
+                        font-size: 20px;
+                        
+                   } 
+                   &:hover{
+                            background-color: cornflowerblue;
+                            transition: 0.2s;
+                        }
+                }
+                .price{
+                    text-align: center;
+                    margin: 10px 0;
+                    font-weight: 500;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}

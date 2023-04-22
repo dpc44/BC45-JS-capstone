@@ -76,6 +76,9 @@
 }
 
 /**footer**/
+.footer {
+  border-top: 1px solid #e0e0e0;
+}
 .footer .container-footer {
   width: 100%;
 }
@@ -172,4 +175,50 @@
 }
 .carousel .container-carousel .carousel-control-next-icon {
   filter: invert(100%);
+}
+
+.product {
+  margin: 55px 0;
+}
+.product .container .card {
+  margin: 10px 10px;
+}
+.product .container .card .card-img-top img {
+  width: 100%;
+}
+.product .container .card .card-body {
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  height: 150px;
+}
+.product .container .card .card-body .product-name {
+  font-size: 25px;
+  font-weight: 500;
+}
+.product .container .card .card-body .short-description {
+  font-size: 15px;
+  font-weight: 300;
+}
+.product .container .card .card-footer .button-outlook {
+  background-color: #ffc107;
+  cursor: pointer;
+}
+.product .container .card .card-footer .button-outlook a {
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+}
+.product .container .card .card-footer .button-outlook:hover {
+  background-color: cornflowerblue;
+  transition: 0.2s;
+}
+.product .container .card .card-footer .price {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 20px;
 }
