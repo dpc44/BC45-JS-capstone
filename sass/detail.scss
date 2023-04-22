@@ -1,4 +1,86 @@
-
 @import './base/base';
 
 
+.detail {
+    .container-detail {
+        display: flex;
+        margin: 55px 55px;
+
+        .img-product {
+            width: 40%;
+            text-align: center;
+            img {
+                
+                
+                
+            }
+        }
+
+        .detail-product {
+            margin: 0 55px;
+            width: 60%;
+            .name-detail {}
+
+            .description-detail {}
+
+            .size-list {
+                margin: 15px 0;
+
+                .btn-size {
+                    padding: 3px 25px;
+                    margin: 2px;
+                    background-color: #cccccc;
+                    font-size: 20px;
+                    font-weight: 600;
+                    &:hover{
+                        background-color: greenyellow;
+                    }
+                }
+                .active{
+                    background-color: greenyellow;
+                }
+            }
+
+            .price {
+                color: red;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            .quantity {
+                display: flex;
+                margin: 15px 0;
+
+                button {
+                    // margin-right:15px;
+                    padding: 3px 25px;
+                    color: #000;
+                    font-size: 20px;
+                    font-weight: 600;
+                    background: rgb(238, 174, 202);
+                    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(75, 143, 223, 1) 100%);
+                    
+                    
+                }
+                
+                .number-quantity {
+                    margin: auto 25px;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+
+            .buttonCart {
+                padding: 13px 45px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                background: rgb(131, 58, 180);
+                background: linear-gradient(149deg, rgba(131, 58, 180, 1) 7%, rgba(253, 29, 29, 0.9051995798319328) 50%, rgba(252, 176, 69, 1) 100%);
+            }
+        }
+    }
+}
+
+
+@import './base/product';

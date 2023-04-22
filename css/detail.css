@@ -145,3 +145,108 @@
   color: red;
   transition: 0.3s;
 }
+
+.detail .container-detail {
+  display: flex;
+  margin: 55px 55px;
+}
+.detail .container-detail .img-product {
+  width: 40%;
+  text-align: center;
+}
+.detail .container-detail .detail-product {
+  margin: 0 55px;
+  width: 60%;
+}
+.detail .container-detail .detail-product .size-list {
+  margin: 15px 0;
+}
+.detail .container-detail .detail-product .size-list .btn-size {
+  padding: 3px 25px;
+  margin: 2px;
+  background-color: #cccccc;
+  font-size: 20px;
+  font-weight: 600;
+}
+.detail .container-detail .detail-product .size-list .btn-size:hover {
+  background-color: greenyellow;
+}
+.detail .container-detail .detail-product .size-list .active {
+  background-color: greenyellow;
+}
+.detail .container-detail .detail-product .price {
+  color: red;
+  font-size: 20px;
+  font-weight: 600;
+}
+.detail .container-detail .detail-product .quantity {
+  display: flex;
+  margin: 15px 0;
+}
+.detail .container-detail .detail-product .quantity button {
+  padding: 3px 25px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgb(238, 174, 202) 0%, rgb(75, 143, 223) 100%);
+}
+.detail .container-detail .detail-product .quantity .number-quantity {
+  margin: auto 25px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.detail .container-detail .detail-product .buttonCart {
+  padding: 13px 45px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(149deg, rgb(131, 58, 180) 7%, rgba(253, 29, 29, 0.9051995798) 50%, rgb(252, 176, 69) 100%);
+}
+
+.product {
+  margin: 55px 0;
+}
+.product .container .card {
+  margin: 10px 10px;
+}
+.product .container .card .card-img-top img {
+  width: 100%;
+}
+.product .container .card .card-body {
+  text-align: center;
+  border-top: 1px solid #e0e0e0;
+  height: 150px;
+}
+.product .container .card .card-body .product-name {
+  font-size: 25px;
+  font-weight: 500;
+}
+.product .container .card .card-body .short-description {
+  font-size: 15px;
+  font-weight: 300;
+}
+.product .container .card .card-footer .button-outlook {
+  background-color: #ffc107;
+  cursor: pointer;
+}
+.product .container .card .card-footer .button-outlook a {
+  text-align: center;
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+}
+.product .container .card .card-footer .button-outlook:hover {
+  background-color: cornflowerblue;
+  transition: 0.2s;
+}
+.product .container .card .card-footer .price {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 20px;
+}
