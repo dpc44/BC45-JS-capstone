@@ -24,19 +24,27 @@
                     align-items: center;
                     text-align: center;
                     height: 600px;
-
+                    
+                    @media only screen and (max-width: 1050px) {
+                        flex-direction: column;
+                    }
                     .carousel-img {
                         width: 60%;
                         // border: 1px solid red;
+                        @media only screen and (max-width: 1050px) {
+                            width: 100%;
+                        }
                         img{
                             height: 50%;
-                    
                             
                         }
                     }
 
                     .carousel-detail {
                         width: 40%;
+                        @media only screen and (max-width: 1050px) {
+                            width: 100%;
+                        }
                     }
                 }
 

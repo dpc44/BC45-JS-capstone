@@ -51,23 +51,30 @@
     <form id="frmRegister">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-12 col-lg-6">
                     <input class="form-control my-2" id="email" placeholder="email*" required>
+                    <p id="error-regex-Email" class="text text-danger"></p>
                 </div>
-                <div class="col-6">
+                <div class="col-md-12 col-lg-6">
                     <input class="form-control my-2" id="name" placeholder="name*" required>
+                    <p id="error-regex-Name" class="text text-danger"></p>
                 </div>
-                <div class="col-6">
+                <div class="col-md-12 col-lg-6">
                     <input class="form-control my-2" type='password' id="password" placeholder="password*" required>
+                    <p id="error-regex-Password" class="text text-danger"></p>
                 </div>
-                <div class="col-6">
+                <div class="col-md-12 col-lg-6">
                     <input class="form-control my-2" id="phone" placeholder="phone*" required>
+                    <p id="error-regex-Phone" class="text text-danger"></p>
                 </div>
-                <div class="col-6">
+                <div class="col-md-12 col-lg-6">
                     <input class="form-control my-2" type='password' id="passwordConfirm"
                         placeholder="password Confirm*" required>
+                        <p id="error-regex-PasswordConfirm" class="text text-danger"></p>
+                        <p id="error-match-PasswordConfirm" class="text text-danger"></p>
+
                 </div>
-                <div class="col-6">
+                <div class="col-md-12 col-lg-6">
                     <span class="fs-5 mx-2">Gender</span>
                     <input class="my-4 mx-2" type="radio" name="gender" id="male" value="true" checked> <label
                         class="fs-5" for="male">Male</label>
@@ -157,6 +164,9 @@
         integrity="sha512-06NZg89vaTNvnFgFTqi/dJKFadQ6FIglD6Yg1HHWAUtVFFoXli9BZL4q4EO1UTKpOfCfW5ws2Z6gw49Swsilsg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- JS -->
+    <script src="./js/method.js"></script>
+
+
     <script src="./js/register.js">
 
     </script>

@@ -8,10 +8,17 @@
     .container-detail {
         display: flex;
         margin: 55px 55px;
-
+        @media only screen and (max-width: 1200px) {
+            flex-direction: column;
+            
+        }
         .img-product {
             width: 40%;
             text-align: center;
+            @media only screen and (max-width: 1200px) {
+                width: 100%;
+                
+            }
             img {
                 
                 
@@ -22,9 +29,19 @@
         .detail-product {
             margin: 0 55px;
             width: 60%;
-            .name-detail {}
+            @media only screen and (max-width: 1200px) {
+                width: 100%;
+                // border: 1px solid red;
+                text-align: center;
+                
+            }
+            .name-detail {
+                
+            }
 
-            .description-detail {}
+            .description-detail {
+                
+            }
 
             .size-list {
                 margin: 15px 0;
@@ -53,7 +70,10 @@
             .quantity {
                 display: flex;
                 margin: 15px 0;
-
+                @media only screen and (max-width: 1200px) {
+                    justify-content: center;
+                    width: 100%;
+                }
                 button {
                     // margin-right:15px;
                     padding: 3px 25px;
@@ -63,13 +83,24 @@
                     background: rgb(238, 174, 202);
                     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(75, 143, 223, 1) 100%);
                     
-                    
+                    @media only screen and (max-width: 1200px) {
+                        
+                        // border: 1px solid red;
+                        text-align: center;
+                        
+                    }
                 }
                 
                 .number-quantity {
                     margin: auto 25px;
                     font-size: 20px;
                     font-weight: 600;
+                    @media only screen and (max-width: 1200px) {
+                        
+                        // border: 1px solid red;
+                        text-align: center;
+                        
+                    }
                 }
             }
 

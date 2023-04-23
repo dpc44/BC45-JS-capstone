@@ -4,4 +4,5 @@ var User = function (){
     this.name = '';
     this.gender = true;
     this.phone = '';
+    this.passwordConfirm = '';
 }
