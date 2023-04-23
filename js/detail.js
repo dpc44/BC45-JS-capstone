@@ -70,12 +70,13 @@ window.onload = function () {
             var mangSanPham = res.data.content;
             var content = '';
             var rand = Math.floor(Math.random() * mangSanPham.length)
+            var i = 0;
             for (var index = rand; index < mangSanPham.length; index++) {
                 var sanPham = mangSanPham[index];
                 content +=
                     `
                     <div class="col-12 col-md-6 col-lg-4">
-                        <div class="card">
+                        <div class="card item-${i}">
                           <img class="card-img-top" src="${sanPham.image}" alt="">
                           <div class="card-body">
                             <h4 class="card-title product-name">${sanPham.name}</h4>
@@ -96,6 +97,8 @@ window.onload = function () {
                 
                 
                 `
+
+                i++;
             }
             document.querySelector('#productList').innerHTML = content;
     
