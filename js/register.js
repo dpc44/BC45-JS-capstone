@@ -30,12 +30,13 @@ document.querySelector('#frmRegister').onsubmit = function (event){
     })
 
     promise.then(function(ketqua){
-        console.log('Thành công register');
+        alert('Thành công register');
         console.log(ketqua);
 
     })
 
     promise.catch(function(err){
+        alert('Thất Bại register ', err);
         console.log(err);
     })
 
