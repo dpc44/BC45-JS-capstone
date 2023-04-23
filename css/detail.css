@@ -150,6 +150,7 @@
 
 .detail {
   border-bottom: 1px solid #e0e0e0;
+  box-shadow: 5px 5px 8px #e2ebfc;
   margin-top: 5px;
 }
 .detail .container-detail {
@@ -334,6 +335,7 @@
   animation-fill-mode: both;
 }
 .product .container .card {
+  box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   margin: 10px 10px;
 }
 .product .container .card .card-img-top {

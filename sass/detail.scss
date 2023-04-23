@@ -3,11 +3,13 @@
 
 .detail {
     border-bottom: 1px solid #e0e0e0;
-    // border-top: 1px solid #e0e0e0;
+    
+    box-shadow: 5px 5px 8px #e2ebfc;
     margin-top: 5px;
     .container-detail {
         display: flex;
         margin: 55px 55px;
+        // border: 1px solid red;
         @media only screen and (max-width: 1200px) {
             flex-direction: column;
             
