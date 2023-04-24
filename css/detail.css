@@ -5,7 +5,32 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  --color-primary: #000;
+  --bg-primary: #fff;
+  --hover: #000;
+  --card-border:1px solid #fff;
+  --card-bg:#fff;
+  --card-color:#000;
+  --card-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+body.dark {
+  --color-primary: #fff;
+  --bg-primary: #000;
+  --hover:#fff;
+  --card-border:3px solid #fff;
+  --card-bg:#000;
+  --card-color:#fff;
+  --card-shadow: 2px 5px 30px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
 /**Menu**/
+body {
+  background-color: var(--bg-primary);
+  color: var(--color-primary);
+}
+
 .header .container-header .upper {
   display: flex;
   justify-content: space-between;
@@ -18,6 +43,18 @@
   font-size: 25px;
   font-weight: 600;
   color: #fff;
+}
+.header .container-header .upper .menu-login #btn-change-theme {
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.header .container-header .upper .menu-login #btn-change-theme:hover {
+  background-color: rgb(62, 136, 219);
+  transition: all 0.5s;
 }
 .header .container-header .upper .menu-login a {
   font-size: 18px;
@@ -45,13 +82,13 @@
   transition: 0.3s;
 }
 .header .container-header .lower {
-  background-color: #fff;
+  background-color: var(--bg-primary);
   width: 100%;
 }
 .header .container-header .lower a {
   font-size: 18px;
   font-weight: 300;
-  color: #000;
+  color: var(--color-primary);
   text-decoration: none;
   margin: 15px 15px;
   position: relative;
@@ -62,7 +99,7 @@
   content: "";
   height: 3px;
   width: 0%;
-  background-color: #000;
+  background-color: var(--hover);
   left: 0;
   bottom: 0px;
 }
@@ -86,6 +123,7 @@
 }
 .footer .container-footer .upper-footer {
   width: 100%;
+  background-color: var(--bg-primary);
 }
 .footer .container-footer .upper-footer .footer-item {
   padding: 35px;
@@ -93,13 +131,13 @@
 .footer .container-footer .upper-footer .footer-item h2 {
   font-size: 30px;
   font-weight: 600;
-  color: black;
+  color: var(--color-primary);
 }
 .footer .container-footer .upper-footer .footer-item ul li a {
   text-decoration: none;
   font-size: 15px;
   font-weight: 400;
-  color: black;
+  color: var(--color-primary);
 }
 .footer .container-footer .upper-footer .footer-item ul li a:hover {
   color: red;
@@ -108,7 +146,7 @@
 .footer .container-footer .upper-footer .footer-item p {
   font-size: 15px;
   font-weight: 400;
-  color: black;
+  color: var(--color-primary);
 }
 .footer .container-footer .upper-footer .footer-item a.button-a {
   font-size: 20px;
@@ -178,12 +216,16 @@
   transition: transform 1s;
 }
 .detail .container-detail .detail-product {
-  margin: 0 55px;
+  margin: 30px 55px;
+  padding: 15px 15px;
+  height: 100%;
   width: 60%;
+  border-left: var(--card-border);
 }
 @media only screen and (max-width: 1200px) {
   .detail .container-detail .detail-product {
     width: 100%;
+    border: none;
     text-align: center;
   }
 }
@@ -335,8 +377,11 @@
   animation-fill-mode: both;
 }
 .product .container .card {
-  box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  border: var(--card-border);
+  box-shadow: var(--card-shadow);
   margin: 10px 10px;
+  background-color: var(--card-bg);
+  color: var(--card-color);
 }
 .product .container .card .card-img-top {
   transform: rotateY(0deg);
@@ -361,6 +406,9 @@
 .product .container .card .card-body .short-description {
   font-size: 15px;
   font-weight: 300;
+}
+.product .container .card .card-footer {
+  border-top: 1px solid #e0e0e0;
 }
 .product .container .card .card-footer .button-outlook {
   background-color: #ffc107;

@@ -12,6 +12,7 @@
 
     .container-carousel {
         // border: 1px solid red;
+        border: var(--card-border);
         box-shadow: 5px 5px 8px #e2ebfc;
         .carousel-inner {
             
@@ -42,6 +43,7 @@
 
                     .carousel-detail {
                         width: 40%;
+                        color: #000;
                         @media only screen and (max-width: 1050px) {
                             width: 100%;
                         }
