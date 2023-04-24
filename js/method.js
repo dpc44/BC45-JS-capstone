@@ -55,6 +55,6 @@ function kiemTraPasswordConfirm(value1, value2, name){
         document.querySelector(`#error-match-${name}`).innerHTML = `${name} không giống !`;
         return false;
     }
-    document.querySelector(`#error-regex-${name}`).innerHTML = '';
+    document.querySelector(`#error-match-${name}`).innerHTML = '';
     return true;
 }
